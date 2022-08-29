@@ -11,7 +11,7 @@ export class ServiceService {
   constructor(private http: HttpClient) { }
 
   getParameters(){
-    return this.http.get(this.urlYamcs);
+    return this.http.get(this.urlJson);
   }
 
 }
