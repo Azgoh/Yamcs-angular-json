@@ -1,0 +1,170 @@
+{
+    "parameters": [{
+      "name": "aknowledgement_flags",
+      "qualifiedName": "/pus-verification/aknowledgement_flags",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 4,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "application_process_ID_ST01",
+      "qualifiedName": "/pus-verification/application_process_ID_ST01",
+      "type": {
+        "engType": "enumeration",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 11,
+          "encoding": "UNSIGNED"
+        },
+        "enumValue": [{
+          "value": "1",
+          "label": "OBC"
+        }, {
+          "value": "2",
+          "label": "COMMS"
+        }, {
+          "value": "3",
+          "label": "ADCS"
+        }, {
+          "value": "4",
+          "label": "SU"
+        }, {
+          "value": "5",
+          "label": "GS"
+        }]
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "code_ST01",
+      "qualifiedName": "/pus-verification/code_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 4,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "data_ST01",
+      "qualifiedName": "/pus-verification/data_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 4,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "message_subtype_ID_TC",
+      "qualifiedName": "/pus-verification/message_subtype_ID_TC",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 8,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "packet_sequence_count_ST01",
+      "qualifiedName": "/pus-verification/packet_sequence_count_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 14,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "packet_type_ST01",
+      "qualifiedName": "/pus-verification/packet_type_ST01",
+      "type": {
+        "engType": "enumeration",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 1,
+          "encoding": "UNSIGNED"
+        },
+        "enumValue": [{
+          "value": "0",
+          "label": "TM"
+        }, {
+          "value": "1",
+          "label": "TC"
+        }]
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "packet_version_number_ST01",
+      "qualifiedName": "/pus-verification/packet_version_number_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 3,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "secondary_header_flag_ST01",
+      "qualifiedName": "/pus-verification/secondary_header_flag_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 1,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "sequence_flags_ST01",
+      "qualifiedName": "/pus-verification/sequence_flags_ST01",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 2,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }, {
+      "name": "service_type_ID_TC",
+      "qualifiedName": "/pus-verification/service_type_ID_TC",
+      "type": {
+        "engType": "integer",
+        "dataEncoding": {
+          "type": "INTEGER",
+          "littleEndian": false,
+          "sizeInBits": 8,
+          "encoding": "UNSIGNED"
+        }
+      },
+      "dataSource": "TELEMETERED"
+    }]
+    
+  }
