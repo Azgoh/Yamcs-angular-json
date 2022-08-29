@@ -1,0 +1,12 @@
+button{
+    background-color: lightgreen;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 5px 3px grey;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 5px 5px 3px black;
+}

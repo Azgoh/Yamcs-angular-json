@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from 'src/app/services/service.service';
 import { ParameterInfo } from 'ParameterInteface';
+import { lastValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-parameter',
@@ -9,12 +10,17 @@ import { ParameterInfo } from 'ParameterInteface';
 })
 export class ParameterComponent implements OnInit {
 
-  parameters: ParameterInfo[] = [];
+  parameters: any = [];
 
   constructor(private service: ServiceService) { }
 
   ngOnInit(): void {
-    this.service.getParameters().subscribe((parameters) => (this.parameters = parameters));
+
+  }
+
+
+  async getParams(){
+    this.parameters = await lastValueFrom(this.service.getParameters());
   }
 
 }

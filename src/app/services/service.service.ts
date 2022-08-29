@@ -10,8 +10,8 @@ export class ServiceService {
   private urlJson = 'http://localhost:5000/parameters';
   constructor(private http: HttpClient) { }
 
-  getParameters(): Observable<ParameterInfo[]>{
-   return this.http.get<ParameterInfo[]>(this.urlYamcs);
+  getParameters(){
+    return this.http.get(this.urlYamcs);
   }
 
 }
