@@ -1,5 +1,10 @@
 <!-- <button (click)="getParameterInfo()">Get Parameter Names</button> -->
-<app-parameter-item
+<!-- <app-parameter-item
   *ngFor="let parameter of parameterInfo"
   [parameter]="parameter"
-></app-parameter-item>
+></app-parameter-item> -->
+
+<table>
+  <tr id="names"><td>names</td></tr>
+  <tr *ngFor="let parameter of parameterInfo"><td><app-parameter-item [parameter]="parameter"></app-parameter-item></td></tr>
+</table>

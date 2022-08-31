@@ -18,7 +18,8 @@ export class ParameterComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getParameters().subscribe((data) => {
-      this.parameterInfo = [...this.parameterInfo, ...data.parameters]; // you add the data.paramters inside the paramterinfo array
+      for(let i=0;i<data.parameters.length;i++)
+        if(data.parameters[i].qualifiedName.includes('/pus-verification/')) this.parameterInfo.push(data.parameters[i]);  // you add the data.paramters inside the paramterinfo array
       console.log(data.parameters);
     });
     console.log('these are the parameter info' + this.parameterInfo); //if you see the console it seems that this is empty
@@ -30,5 +31,5 @@ export class ParameterComponent implements OnInit {
   // in order for this to work you need to work with promises
   async getParams() {
     this.parameters = await lastValueFrom(this.service.getParameters());
-  }
+  };
 }
