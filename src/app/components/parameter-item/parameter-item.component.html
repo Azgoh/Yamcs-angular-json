@@ -1,4 +1,5 @@
-<div class="par" (click)="onClick()">
-  <!-- this is where you implement the onCLick method-->
-  <h3 class="name">{{ parameter.name }}</h3>
-</div>
+ <!-- this is where you implement the onCLick method-->
+  <table>
+    <tr *ngIf="parameter.qualifiedName.includes('/pus-verification/')"><td class="name">Name:</td><td class="paramName" (click)="onClick()">{{ parameter.name }}</td></tr>
+  </table>
+

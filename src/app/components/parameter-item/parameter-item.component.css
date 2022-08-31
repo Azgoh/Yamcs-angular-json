@@ -1,0 +1,16 @@
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr{
+    border: 1px solid black;
+}
+.name{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.paramName:hover{
+    color: red;
+    cursor: pointer;
+}
