@@ -1,2 +1,5 @@
-<button (click)="getParams()">Get Parameter Names</button>
-<app-parameter-item *ngFor="let parameter of parameters" [parameter]="parameter"></app-parameter-item>
+<!-- <button (click)="getParameterInfo()">Get Parameter Names</button> -->
+<app-parameter-item
+  *ngFor="let parameter of parameterInfo"
+  [parameter]="parameter"
+></app-parameter-item>
